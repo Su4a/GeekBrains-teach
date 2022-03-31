@@ -15,7 +15,7 @@ public class Main {
         Obstacle[] obstacles = {
                 new RunningRoad(220),
                 new Wall(48)};
-
+        
         for (int i = 0; i < obstacles.length; i++) {
             for (int j = 0; j < participants.length; j++) {
                 System.out.println(obstacles[i].doIt(participants[j]));
