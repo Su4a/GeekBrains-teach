@@ -2,12 +2,12 @@ public class CalculatorArr {
 
     public boolean checkArrFoSize(String[][] arr, int arrLenght) {
         if (arr.length != arrLenght) {
-            throw new MyArraySizeException("Размер массива не равен 4");
+            throw new MyArraySizeException("Размер массива не равен " + arrLenght);
         }
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].length != arrLenght) {
-                throw new MyArraySizeException("Размер массива не равен 4");
+                throw new MyArraySizeException("Размер массива не равен " + arrLenght);
             }
         }
         return true;
