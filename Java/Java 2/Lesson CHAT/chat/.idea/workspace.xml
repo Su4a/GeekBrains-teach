@@ -36,7 +36,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "AtomConfig"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,10 +100,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.com.example.chat.HelloApplication" />
-        <item itemvalue="Application.com.example.chat.HelloApplication" />
         <item itemvalue="Application.com.example.chat.Main" />
+        <item itemvalue="Application.com.example.chat.HelloApplication" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
