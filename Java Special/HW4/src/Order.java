@@ -10,7 +10,7 @@ public class Order {
         this.product = product;
     }
 
-    public static Order addOrder(Buyer buyer, Product product) {
+    public static Order addOrder(Buyer buyer, Product product) throws WrongOrder {
         if (buyer == null) throw  new WrongOrder("Пользователь не передан");
         if (product == null) throw new WrongOrder("Продукт не передан");
         countOrder++;
