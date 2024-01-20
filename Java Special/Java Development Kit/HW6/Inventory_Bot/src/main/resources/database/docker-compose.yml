@@ -1,0 +1,29 @@
+version: "3.5"
+
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: inventory-postgres
+    volumes:
+      - C:\Users\Su4a Project\OneDrive\Work\InventoryBet_bot\DataBase\Postgres\data:/var/lib/postgresql/data
+      - C:\Users\Su4a Project\OneDrive\Work\InventoryBet_bot\DataBase\Postgres\data postgres:/var/lib/postgresql/data postgres
+    #  - Postgres-Data:/var/lib/postgresql/data
+    #  - Postgres-Data-postgres:/var/lib/postgresql/data postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345KUT445lipi
+    user: root
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    networks:
+      - appnet
+
+#volumes:
+  #Postgres-Data:
+  #Postgres-Data-postgres:
+
+networks:
+  appnet:
+    name: appnet
+    driver: bridge
